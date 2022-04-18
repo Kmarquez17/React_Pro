@@ -1,6 +1,6 @@
 import { PlacesState } from './PlacesProvider';
 
-type  PlacesAction = {
+type PlacesAction = {
     type: 'setUserLocation', payload: [number, number]
 }
 
