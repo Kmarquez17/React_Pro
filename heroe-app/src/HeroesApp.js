@@ -1,5 +1,10 @@
 import { AppRouter } from "./routes/AppRouter";
+import { AuthProvider } from "./context";
 
 export const HeroesApp = () => {
-  return <AppRouter />;
+  return (
+    <AuthProvider>
+      <AppRouter />
+    </AuthProvider>
+  );
 };
